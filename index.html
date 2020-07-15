@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>  
+	<script type="text/javascript">
+		function sendEmail() {
+			Email.send({
+				SecureToken : "b3b3ad36-3f2d-4a0e-90b5-5d78076db4f1",
+				To : "kunicki.jan@gmail.com , krukowskijakub24@gmail.com",
+				From : "odjureczka@gmail.com",
+				Subject : "Test",
+				Body : "A ty byku ty",
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+			});
+		}
+	</script>
+</head>
+<body>  
+	<form method="post">
+		<input type="button" value="Send Email" onclick="sendEmail()"/>
+	</form>  
+</body>
+</html>
