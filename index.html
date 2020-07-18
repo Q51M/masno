@@ -10,7 +10,7 @@
 <body>
     <div class="main">
         <form name="form"><input class="textview" name="textview"></form>
-        <table>
+        <table id="table">
             <tr>
                 <td><input class="button" type="button" value="C" onclick="cln()"></td>
                 <td><input class="button" style="padding-bottom: 5px;" type="button" value="&larr;" onclick="back()"></td>
@@ -33,10 +33,10 @@
                 <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
                 <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
                 <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
-                <td rowspan="5"><input class="button" type="button" value="=" style="height: 102px;" onclick="equal()"></td>
+                <td rowspan="5"><input class="button" type="button" value="=" style="height: 255px;" onclick="equal()"></td>
             </tr>
             <tr>
-                <td colspan="2"><input class="button" type="button" value="0" style="width: 102px;" onclick="insert(0)"></td>
+                <td colspan="2"><input class="button" type="button" value="0" style="width: 255px;" onclick="insert(0)"></td>
                 <td><input class="button" type="button" value="." onclick="insert('.')"></td>
             </tr>
         </table>

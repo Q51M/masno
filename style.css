@@ -2,6 +2,8 @@ body
 {
 background: rgb(11,3,23);
 background: linear-gradient(146deg, rgba(11,3,23,1) 9%, rgba(126,26,255,1) 40%, rgba(255,110,32,1) 63%, rgba(13,6,2,1) 92%);
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 *{
 	margin: 0;
@@ -9,25 +11,30 @@ background: linear-gradient(146deg, rgba(11,3,23,1) 9%, rgba(126,26,255,1) 40%, 
 }
 .main
 {
-	width: 210px;
+	width: 525px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 12.5px;
+	margin-bottom: 12.5px;
 	background: rgb(131,58,180);
 	background: linear-gradient(145deg, rgba(131,58,180,1) 15%, rgba(253,29,29,1) 60%, rgba(252,176,69,1) 85%);
 	box-shadow: 5px 5px 20px black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
 }
 .button
 {
-	width: 50px;
-	height: 50px;
-	font-size: 25px;
+	width: 125px;
+	height: 125px;
+	font-size: 62.5px;
 	text-align: center;
 	background-color: rgba(255,255,255,0.1);
 	border: none;
 	transition: 0.3s;
-	margin: 0px;
+	margin: 1px;
 }
 .button:hover {
 	background: rgba(246,255,255,0.4);
@@ -36,13 +43,18 @@ background: linear-gradient(146deg, rgba(11,3,23,1) 9%, rgba(126,26,255,1) 40%, 
 }
 .textview
 {
-	width: 206px;
-	height: 50px;
-	margin-left: 2px;
-	margin-top: 2px;
-	font-size: 20px;
+	width: 515px;
+	height: 125px;
+	margin-left: 5px;
+	margin-top: 5px;
+	font-size: 80px;
 	text-align: right;
 	background-color: rgba(255,255,255,0.1);
 
 	border: none;
+}
+#table
+{
+	margin-left: 3px;
+	margin-bottom: 2px;
 }
